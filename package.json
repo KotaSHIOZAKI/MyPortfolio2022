@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "my-portfolio",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,5 +12,18 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
-  }
+  },
+  "description": "Since 2020",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KotaSHIOZAKI/MyPortfolio2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KotaSHIOZAKI/MyPortfolio2022/issues"
+  },
+  "homepage": "https://github.com/KotaSHIOZAKI/MyPortfolio2022#readme"
 }

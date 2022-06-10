@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>モグラたたき的なコード</title>
+  </head>
+  <body>
+    <!-- タイム、スコア -->
+    <table border="2" align="left">
+      <tr>
+        <th id="main">TIME</th>
+        <th id="main">SCORE</th>
+      </tr>
+      <tr>
+        <td id="tm">⏱000</td>
+        <td id="sc">000</td>
+      </tr>
+    </table>
+
+    <!-- ハイスコア -->
+    <table border="2" align="right">
+      <tr>
+        <th id="sub">HIGH SCORE</th>
+      </tr>
+      <tr>
+        <td id="hi">000</td>
+      </tr>
+    </table>
+
+    <!-- ゲームスタート（30秒、50秒、100秒） -->
+    <form>
+      <input type="button" id="thirty" value="30秒 (Best: 20)" /><br />
+      <input type="button" id="fifty" value="50秒 (Best: 35)" /><br />
+      <input type="button" id="hundred" value="100秒 (Best: 70)" />
+    </form>
+
+    <!-- 10秒カウントダウン -->
+    <h1 id="countdown"></h1>
+
+    <!-- モグラ -->
+    <div id="no1">
+      <img src="images/1点.png" alt="1点" />
+    </div>
+    <div id="no2">
+      <img src="images/1点.png" alt="1点" />
+    </div>
+    <div id="no3">
+      <img src="images/1点.png" alt="1点" />
+    </div>
+    <div id="no4">
+      <img src="images/1点.png" alt="1点" />
+    </div>
+    <div id="no5">
+      <img src="images/1点.png" alt="1点" />
+    </div>
+
+    <!-- 説明 -->
+    <p>
+      このモグラたたきはHTMLや、CSS、JavaScript、そしてjQueryで作りました。<br />
+      <br />～ルール説明～<br />
+      ①「30秒」、「50秒」、「100秒」それぞれのボタンを押すと、ゲームが始まる。<br />
+      ②モグラ（今回は１点ボックス）をクリックすると、加点される。<br />
+      ③時間内にハイスコアを目指そう！
+    </p>
+
+    <!-- スクリプト挿入 -->
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

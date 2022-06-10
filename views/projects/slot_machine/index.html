@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>スロットマシン的なコード</title>
+  </head>
+  <body>
+    <table border="2">
+      <!-- 🎰スロット欄 -->
+      <tr>
+        <td rowspan="2"><div id="num1">1</div></td>
+        <td rowspan="2"><div id="num2">1</div></td>
+        <td rowspan="2"><div id="num3">1</div></td>
+
+        <!-- 残りコイン枚数 -->
+        <td rowspan="1"><div id="bonus">📀×10</div></td>
+      </tr>
+
+      <!-- スタート -->
+      <tr>
+        <td rowspan="1">
+          <form>
+            <input type="button" id="sBtn" value="START" onclick="start()" />
+          </form>
+        </td>
+      </tr>
+    </table>
+
+    <!-- 説明 -->
+    <p>
+      このスロットマシンはHTMLや、CSS、そしてJavaScriptで作りました。<br />
+      <br />～ルール説明～<br />
+      ①「START」ボタンを押すと、コインを1枚使ってスロットが始まる。<br />
+      ②「STOP」ボタンを押すと、スロットを止めることができる。<br />
+      ③２つそろうと、コインが5枚返ってくる。<br />
+      ④３つそろうと、コインが20枚返ってくる。<br />
+      ⑤「７」が３つそろうと、コインが何枚返ってくるかは秘密。<br />
+      ⑥コインの枚数が0になるとゲームオーバー！（もう一度やる時は再読み込みする必要がある）
+    </p>
+
+    <!-- スクリプト挿入 -->
+    <script src="script.js"></script>
+  </body>
+</html>
