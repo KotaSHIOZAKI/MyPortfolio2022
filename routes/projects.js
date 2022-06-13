@@ -11,5 +11,8 @@ router.get('/whack-a-mole', function(req, res, next) {
 router.get('/slot', function(req, res, next) {
   res.render('projects/slot_machine', {});
 });
+router.get('/hexagon-puzzle', function(req, res, next) {
+  res.render('projects/unity/index', {});
+});
 
 module.exports = router;
