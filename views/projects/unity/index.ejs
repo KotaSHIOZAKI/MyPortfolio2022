@@ -4,8 +4,21 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | HexagonPuzzle</title>
-    <link rel="shortcut icon" href="../TemplateData/favicon.ico">
-    <link rel="stylesheet" href="../TemplateData/style.css">
+    <link rel="shortcut icon" href="../unity/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="../unity/TemplateData/style.css">
+
+    <style>
+      .btn-success {
+        color: #fff;
+        background-color: #198754;
+        border-color: #198754;
+      }
+      .btn-success:hover {
+        color: #fff;
+        background-color: #157347;
+        border-color: #146c43;
+      }
+    </style>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -21,9 +34,13 @@
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">HexagonPuzzle</div>
       </div>
+      
+      <button class="btn btn-success" onclick="location.href='../skills'">
+        スキルセット一覧に戻る
+      </button>
     </div>
     <script>
-      var buildUrl = "../Build";
+      var buildUrl = "../unity/Build";
       var loaderUrl = buildUrl + "/Hexagon Puzzle.loader.js";
       var config = {
         dataUrl: buildUrl + "/Hexagon Puzzle.data.unityweb",

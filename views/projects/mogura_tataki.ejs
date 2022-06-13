@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../stylesheets/mole_style.css" />
     <title>モグラたたき的なコード</title>
+
+    <style>
+      .btn-success {
+        color: #fff;
+        background-color: #198754;
+        border-color: #198754;
+      }
+      .btn-success:hover {
+        color: #fff;
+        background-color: #157347;
+        border-color: #146c43;
+      }
+    </style>
   </head>
   <body>
     <!-- タイム、スコア -->
@@ -64,6 +77,10 @@
       ②モグラ（今回は１点ボックス）をクリックすると、加点される。<br />
       ③時間内にハイスコアを目指そう！
     </p>
+
+    <button class="btn btn-success" onclick="location.href='../skills'">
+      スキルセット一覧に戻る
+    </button>
 
     <!-- スクリプト挿入 -->
     <script src="../javascripts/jquery-3.2.1.min.js"></script>

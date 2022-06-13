@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../stylesheets/slot_style.css" />
     <title>スロットマシン的なコード</title>
+
+    <style>
+      .btn-success {
+        color: #fff;
+        background-color: #198754;
+        border-color: #198754;
+      }
+      .btn-success:hover {
+        color: #fff;
+        background-color: #157347;
+        border-color: #146c43;
+      }
+    </style>
   </head>
   <body>
     <table border="2">
@@ -39,6 +52,10 @@
       ⑤「７」が３つそろうと、コインが何枚返ってくるかは秘密。<br />
       ⑥コインの枚数が0になるとゲームオーバー！（もう一度やる時は再読み込みする必要がある）
     </p>
+
+    <button class="btn btn-success" onclick="location.href='../skills'">
+      スキルセット一覧に戻る
+    </button>
 
     <!-- スクリプト挿入 -->
     <script src="../javascripts/slot_script.js"></script>
