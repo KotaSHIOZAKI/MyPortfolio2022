@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+.dropcap:first-letter {
+  font-size: 60px;/*文字の大きさ*/
+  margin-right: 6px;
+  margin-top: 6px;
+  float: left;
+  line-height: 1;/*必要*/
+}

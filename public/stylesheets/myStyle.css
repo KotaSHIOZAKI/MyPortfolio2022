@@ -1,0 +1,15 @@
+.dropcap:first-letter {
+  font-size: 60px;/*文字の大きさ*/
+  margin-right: 6px;
+  margin-top: 6px;
+  float: left;
+  line-height: 1;/*必要*/
+}
+
+@font-face {
+	font-family: 'MyFont';
+	src: url(/Corporate-Logo-Rounded.otf);
+}
+html {
+  font-family: MyFont;
+}
