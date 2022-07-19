@@ -14,7 +14,7 @@ var starting = false;
 
 function slot() {
   document.getElementById("bonus").textContent =
-    "📀×" + ("00" + coins).slice(-2);
+    "🪙×" + ("00" + coins).slice(-2);
   count = count - 1;
   a = Math.floor(Math.random() * 9) + 1;
   b = Math.floor(Math.random() * 9) + 1;
@@ -96,9 +96,9 @@ function bonus() {
   //ボーナス
   if (div1.textContent == 7 && div2.textContent == 7 && div3.textContent == 7) {
     //ラッキーセブンの処理
-    document.getElementById("bonus").textContent = "ﾗｯｷｰｾﾌﾞﾝ！📀+" + bonusCoin;
+    document.getElementById("bonus").textContent = "ﾗｯｷｰｾﾌﾞﾝ！🪙+" + bonusCoin;
   } else {
-    document.getElementById("bonus").textContent = "ボーナス！📀+" + bonusCoin;
+    document.getElementById("bonus").textContent = "ボーナス！🪙+" + bonusCoin;
   }
   coins += bonusCoin;
   //上限の設定
